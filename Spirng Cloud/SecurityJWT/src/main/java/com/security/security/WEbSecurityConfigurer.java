@@ -33,7 +33,7 @@ public class WEbSecurityConfigurer extends WebSecurityConfigurerAdapter {
     protected void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.inMemoryAuthentication()
                 .withUser("AnasMarg")
-                .password("secret")
+                .password(passwordEncoder().encode("secret"))
                 .roles("USER");
     }
 

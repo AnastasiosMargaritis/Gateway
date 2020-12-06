@@ -6,7 +6,6 @@
         <option value="$PROJECT_DIR$/../Gateway/pom.xml" />
         <option value="$PROJECT_DIR$/../user/pom.xml" />
         <option value="$PROJECT_DIR$/Microservice-B/pom.xml" />
-        <option value="$PROJECT_DIR$/../SecurityJWT/pom.xml" />
       </list>
     </option>
   </component>

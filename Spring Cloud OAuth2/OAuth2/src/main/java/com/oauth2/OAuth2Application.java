@@ -20,14 +20,14 @@ public class OAuth2Application extends WebSecurityConfigurerAdapter {
 		return "Hi " + principal.getName() + " you are authenticated via Github.";
 	}
 
+	
+
 	@Override
 	public void configure(HttpSecurity http) throws Exception {
 
 		http
 				.csrf().disable()
 				.authorizeRequests()
-				.antMatchers("/Intranet/Bokning").authenticated() // Block this
-				.antMatchers("/**", "/Intranet**").permitAll() // Allow this for all
 				.anyRequest().authenticated()
 				.and().logout().logoutSuccessUrl("/").permitAll()
 				.and()

@@ -1,0 +1,18 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            clientId: 9010f50f087ae5cc688d
+            clientSecret:  02bacff64efc8f1fe358e7166510fba310c06583
+            accessTokenUri: https://github.com/login/oauth/access_token
+            userAuthorizationUri: https://github.com/login/oauth/authorize
+            tokenName: oauth_token
+            clientAuthenticationScheme: form
+            resource:
+              user-info-uri: https://api.github.com/user
+              prefer-token-info: false
+server:
+  port:
+    9090
